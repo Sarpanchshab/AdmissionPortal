@@ -1,0 +1,35 @@
+<%- include('../header.ejs') %>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>course display </h1>
+    <div class="container">
+        <table class="table table-bordered text centered">
+            <tr>
+                <th colspan="5">Course View</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Comment</th>
+                
+            </tr>
+        
+                <tr>
+                    <td><%= course._id %></td>
+                    <td><%= course.name %></td>
+                    <td><%= course.email %></td>
+                    <td><%= course.course %></td>
+                    <td><%= course.status %></td>
+                    <td><%= course.comment %></td>
+                    
+                </tr> 
+             
+        </table>
+    </div>
+
+    <%- include('../footer.ejs') %>

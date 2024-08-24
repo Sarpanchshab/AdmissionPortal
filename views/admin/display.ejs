@@ -1,0 +1,64 @@
+<%- include('../header.ejs') %>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>course display </h1>
+    <div class="container">
+        <table class="table table-bordered text centered">
+            <tr>
+                <th colspan="5">Course Display</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Message</th>
+                <th>Comment</th>
+                <th>Action</th>
+            </tr>
+            <% course.forEach((item)=>{ %>
+                <tr>
+                    <td>
+                        <%= item.id %>
+                    </td>
+                    <td>
+                        <%= item.name %>
+                    </td>
+                    <td>
+                        <%= item.email %>
+                    </td>
+                    <td>
+                        <%= item.course %>
+                    </td>
+                    <td>
+                        <%= item.status %>
+                    </td>
+                    <td>
+                        <%= item.comment %>
+                    </td>
+                    <td>
+                        <form action="/admin/updateStatus/<%= item._id %>" method="post">
+                            <textarea name="comment" id=""></textarea>
+                            <input type="hidden" name="name" value="<%= item.name %>">
+                      <input type="hidden" name="email" value="<%= item.email %>">
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-info text-white" name="status"
+                            value="Approved">Approved</button>
+                        <button type="submit" class="btn btn-danger" name="status" value="Rejected">Rejected</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="/courseView/<%= item._id %>" class="btn btn-primary">View</a>
+                        <a href="/courseEdit/<%= item._id %>" class="btn btn-info">Edit</a>
+                        <a href="/courseDelete/<%= item._id %>" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+        </table>
+
+
+        <%- include('../footer.ejs') %>
