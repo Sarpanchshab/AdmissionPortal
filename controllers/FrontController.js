@@ -346,7 +346,7 @@ class FrontController {
       html:
         "<p>Hii " +
         name +
-        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com' +
+        ',Please click here to <a href="mongodb+srv://monu1999june:monu1234@cluster0.m4jdf.mongodb.net/AdmissionPortal?retryWrites=true&w=majority&appName=Cluster0' +
         token +
         '">Reset</a>Your mail</p>.',
     });
