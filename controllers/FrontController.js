@@ -273,7 +273,7 @@ class FrontController {
       html:
         "<p>Hii " +
         name +
-        ',Please click here to <a href="http://localhost:3000/verify?id=' +
+        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com' +
         user_id +
         '">Verify</a>Your mail</p>.',
     });
@@ -346,7 +346,7 @@ class FrontController {
       html:
         "<p>Hii " +
         name +
-        ',Please click here to <a href="http://localhost:3000/reset-password?token=' +
+        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com' +
         token +
         '">Reset</a>Your mail</p>.',
     });
