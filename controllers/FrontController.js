@@ -273,7 +273,7 @@ class FrontController {
       html:
         "<p>Hii " +
         name +
-        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com' +
+        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com/home' +
         user_id +
         '">Verify</a>Your mail</p>.',
     });
