@@ -271,9 +271,9 @@ class FrontController {
       subject: "For Verification mail", // Subject line
       text: "heelo", // plain text body
       html:
-        "<p>Hii " +
+       "<p>Hii " +
         name +
-        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com/home' +
+        ',Please click here to <a href="https://admissionportal-z4tm.onrender.com/verify?id=' +
         user_id +
         '">Verify</a>Your mail</p>.',
     });
